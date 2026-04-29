@@ -28,7 +28,7 @@ async function whitelistMAC(macAddress, timeLabel) {
     await client.write(["/ip/hotspot/ip-binding/add"], {
       "mac-address": macAddress,
       type: "bypassed",
-      comment: `Qonnect ${timeLabel}`,
+      comment: `Invoicify Pro ${timeLabel}`,
     });
     
     await client.close();
